@@ -1,0 +1,99 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="blackjackstyle.css">
+    <meta charset="utf-8" />
+    <title>Javascript Blackjack</title>
+</head>
+<body style="background-image: url('Cards/background.png');background-repeat: no-repeat;background-attachment: fixed;background-size: 100% 100%;">
+       <!--<div class = "topRight">
+          <div class="column">
+         <img src = "Cards/FaceTest.png" height = "400" width = "250" >
+         </div>
+         <div class="column">
+               <img src = "Cards/FaceTest.png" height = "400" width = "250" >
+               </div>
+       </div>
+    -->
+
+    <h1>Aggie Blackjack </h1>
+    <div class="textupdates" id="textUpdates">
+        Press 'New Game' to begin!
+
+
+    </div> 
+
+    <div class="buttonbox" id="newgame">
+        <button alt="play" id="play">New Game</button>
+    </div>
+    <div class="buttonbox hidden" id="buttonBox">
+        <button alt="hit" id="hit">Hit</button>
+        <button alt="stay" id="stay">Stay</button>
+    </div>
+    <table>
+        <tr>
+            <th id="phand">             
+                Your Hand
+            </th>
+            <th id="dhand">
+                Dealer's Hand
+            </th>
+        </tr>
+        <tr>
+            <td id="pcards">No cards dealt yet</td>
+            <td id="dcards">No cards dealt yet</td>
+
+        </tr> 
+    </table>
+    <div id="tracker" class="buttonbox">
+        <p>Wins: 0 Draws: 0 Losses: 0</p>
+    </div>
+    <div class="buttonbox">
+        <p><span class="bold" >simple strategy suggestion: </span></p>       
+        <span id="choice" class="bold redcard"></span>
+        <!--<br />
+        <br />
+        <img src="img/stratchart.png" />-->
+    </div>
+
+    
+    <div class="row">
+        <div class="column">
+            <img src="Cards/AggHand.png"  alt="Flowers in Chania" >
+        </div>
+        <div class = "border">
+        <div class="column">
+            <img src="Cards/blank.png" id="card1" alt="Flowers in Chania" >
+        </div>
+        <div class="column">
+            <img src="Cards/blank.png" id="card2" alt="Flowers in Chania" >
+        </div>
+        <div class="column">
+            <img src="Cards/blank.png" id="card3" alt="Flowers in Chania" >
+        </div>
+        <div class="column">
+            <img src="Cards/blank.png" id="card4" alt="Flowers in Chania" >
+        </div>
+        <div class="column">
+            <img src="Cards/blank.png" id="card5" alt="Flowers in Chania" >
+        </div>
+        <div class="column">
+            <img src="Cards/DealHand.png" alt="Flowers in Chania" >
+        </div>
+        <div class="column">
+            <img src="Cards/blank.png" id="DCard1" alt="Flowers in Chania" >
+        </div>
+        <div class="column">
+            <img src="Cards/blank.png" id="DCard2" alt="Flowers in Chania" >
+        </div>
+        <div class="column">
+            <img src="Cards/blank.png" id="DCard3" alt="Flowers in Chania" >
+        </div>
+    </div>
+    <div class="column">
+        <img src="Cards/blank.png" id="DCard4" alt="Flowers in Chania" >
+    </div>
+</div>
+<script src="blackjack.js"></script>
+</body>
+
+</html>
